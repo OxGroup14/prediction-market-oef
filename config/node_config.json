@@ -10,9 +10,9 @@
   "search_prometheus_log_file": "./fetch-logs/search-vars.txt",
   "http_port": 7500,
   "log_dir": "./fetch-logs/",
-  "search_log": "/logs/search.log",
-  "core_log": "/logs/core.log",
   "ssl_certificate": "",
+  "core_log": "/logs/core.log",
+  "search_log": "/logs/search.log",
   "core": {
     "core_binary": "/oef-mt-core/bazel-bin/mt-core/main/src/cpp/app",
      "config": {
@@ -30,7 +30,7 @@
       "karma_policy": {
       },
       "prometheus_log_interval": 3,
-      "prometheus_log_file": "/logs/core-vars.txt"
+      "prometheus_log_file": "./fetch-logs/core-vars.txt"
     }
   },
   "search_peers": ["KEY:HOST:PORT"],
@@ -50,7 +50,7 @@
     "fields": ["bootstrap:private-key"]
   },
   "search_config": {
-    "search_prometheus_log_file": "/logs/search-vars.txt",
+    "search_prometheus_log_file": "./fetch-logs/search-vars.txt",
     "daps": {
       "network_search": {
         "class": "DapERNetwork",
